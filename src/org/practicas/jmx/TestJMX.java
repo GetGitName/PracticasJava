@@ -19,7 +19,7 @@ public class TestJMX {
 		try {
 			MBeanServer servidorMBeans = MBeanServerFactory.createMBeanServer();
 			JMXServiceURL url = new JMXServiceURL(null, "localhost", 5555);
-			this.jmxConectorServer = JMXConnectorServerFactory.newJMXConnectorServer(url, null, servidorMBeans);
+			//this.jmxConectorServer = JMXConnectorServerFactory.newJMXConnectorServer(url, null, servidorMBeans);
 			this.jmxConectorServer.start();
 			
 		} catch (Throwable e) {
